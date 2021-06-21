@@ -12,7 +12,7 @@ The designs were created to the following widths:
 ### Primary
 
 - Red: hsl(0, 78%, 62%)
-- Cyan: hsl(180, 62%, 55%)
+- Cyan:hsl( 180, 62%, 55%)
 - Orange: hsl(34, 97%, 64%)
 - Blue: hsl(212, 86%, 64%)
 

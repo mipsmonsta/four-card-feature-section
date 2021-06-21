@@ -1,0 +1,56 @@
+:root {
+    
+--red: hsl(0, 78%, 62%);
+--cyan:hsl( 180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.card > img {
+    width: 64px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.card.top--cyan {
+    border-top: 3px solid var(--cyan);
+}
+
+.card.top--blue {
+    border-top: 3px solid var(--blue);
+}
+
+.card.top--red{
+    border-top: 3px solid var(--red);
+}
+
+.card.top--orange {
+    border-top: 3px solid var(--orange);
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
