@@ -12,13 +12,26 @@
     box-sizing: border-box;
 }
 
+
+.cards {
+    width: auto;
+    height: 380px;
+    display: grid;
+    grid-template-rows: 10px 90px 80px 10px 10px 80px 100px;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 10px;
+
+}
+
 .card {
     width: 300px;
-    height: 200px;
+    height: 180px;
     position: relative;
     padding: 20px;
     border-radius: 4px;
+    box-shadow: 0 0 10px grey;
 }
+
 
 .card > img {
     width: 64px;
@@ -30,20 +43,29 @@
 
 .card.top--cyan {
     border-top: 3px solid var(--cyan);
-}
+    grid-row: 3 / 7;
+    grid-column : 1 / 2; 
 
-.card.top--blue {
-    border-top: 3px solid var(--blue);
 }
 
 .card.top--red{
     border-top: 3px solid var(--red);
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
 }
 
 .card.top--orange {
     border-top: 3px solid var(--orange);
+    grid-column: 2 / 3;
+    grid-row: 6 / -1;
+
 }
 
+.card.top--blue {
+    border-top: 3px solid var(--blue);
+    grid-column: 3 / -1;
+    grid-row: 3 / 7; 
+}
 
 
 .attribution {
