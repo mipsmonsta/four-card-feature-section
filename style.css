@@ -123,3 +123,26 @@ p.tag2 {
   color: hsl(228, 45%, 44%);
 }
 
+@media only screen and (max-width: 400px){
+    .text {
+        width: 300px;
+        height: 180px;
+    }
+
+    p.main {
+        font-size: 1.4rem;
+    }
+
+    p.tag1 {
+        font-size: 1.45rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        height: 920px;
+        justify-content: space-evenly;
+    }
+
+
+}
