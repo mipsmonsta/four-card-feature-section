@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 :root {
     
 --red: hsl(0, 78%, 62%);
 --cyan:hsl( 180, 62%, 55%);
 --orange: hsl(34, 97%, 64%);
 --blue: hsl(212, 86%, 64%);
+
+--ff-family: 'Poppins', sans-serif;
+
 }
 
 * {
@@ -12,12 +17,46 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--ff-family);
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 480px;
+    height: 180px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+p.main {
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+p.tag1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+p.tag2 {
+    font-weight: 200;
+    font-size: 0.9rem;
+}
 
 .cards {
     width: auto;
-    height: 380px;
+    height: 420px; /*2 x card height + 20 px */
     display: grid;
-    grid-template-rows: 10px 90px 80px 10px 10px 80px 100px;
+    grid-template-rows: 10px 100px 90px 10px 10px 100px 100px;
     grid-template-columns: 300px 300px 300px;
     column-gap: 10px;
 
@@ -25,11 +64,11 @@
 
 .card {
     width: 300px;
-    height: 180px;
+    height: 200px;
     position: relative;
     padding: 20px;
     border-radius: 4px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 5px grey;
 }
 
 
@@ -67,6 +106,14 @@
     grid-row: 3 / 7; 
 }
 
+.role {
+    font-weight: 600;
+}
+
+.desc {
+    font-weight: 200;
+    font-size: 0.9rem;
+}
 
 .attribution {
   font-size: 11px;
